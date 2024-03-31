@@ -1,5 +1,6 @@
 package com.patika.kredinbizdeservice.client.dto.response;
 
+import com.patika.kredinbizdeservice.enums.ApplicationStatus;
 import lombok.*;
 
 import java.time.LocalDateTime;

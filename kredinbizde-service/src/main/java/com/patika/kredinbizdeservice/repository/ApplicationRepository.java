@@ -13,4 +13,10 @@ public class ApplicationRepository {
         applicationList.add(application);
         return application;
     }
+
+    public List<Application> getAllApplicationsByEmail(String email) {
+        return applicationList.stream()
+                .filter(application -> application.getUser().getEmail().equals(email))
+                .toList();
+    }
 }
