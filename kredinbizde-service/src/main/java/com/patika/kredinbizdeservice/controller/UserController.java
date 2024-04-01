@@ -46,6 +46,11 @@ public class UserController {
         return ResponseEntity.notFound().build();
     }
 
+    @GetMapping("/exception")
+    public void createKredinbizdeException() {
+        userService.createKredinbizdeException();
+    }
+
 
    /* @Autowired
     public void setUserService(IUserService userService) {

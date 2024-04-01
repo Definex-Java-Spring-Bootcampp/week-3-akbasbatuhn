@@ -85,4 +85,8 @@ public class UserService {
     public User getById(Long userId) {
         return userRepository.findByUserId(userId);
     }
+
+    public void createKredinbizdeException() {
+        throw new KredinbizdeException("User service test exception");
+    }
 }
